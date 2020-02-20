@@ -1,0 +1,15 @@
+<!--pages/music-play/music-play.wxml-->
+<view class="container">
+    <view class="moveCircle">
+        <image class="bg {{isPlay?'running':'paused'}}" src="{{poster}}" mode="aspectFit|aspectFill|widthFix"
+        lazy-load="{{ture}}">
+        </image>
+    </view>
+    <image class="play-item {{isPlay?'play':'unplay'}}" src="/images/icon/shou.png"></image>
+    <text>{{name}}</text>
+    <image class="music" bind:tap="handleClick" mode="aspectFit|aspectFill|widthFix"
+    src="{{isPlay?'/images/icon/stop.png':'/images/icon/play.png'}}">
+    </image>
+    <image src="{{poster}}" class="background_img"></image>
+    <view class="bg-blur"></view>
+</view>

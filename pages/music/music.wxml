@@ -1,0 +1,9 @@
+<v-item title="热门歌曲" data="{{hotSongs}}" subTitle="{{url.hotSongs.subTitle}}">
+    <image class="slot-icon" slot="icon" src="/images/icon/true.png"></image>
+  </v-item>
+  <v-item title="最新音乐" data="{{newSongs}}" subTitle="{{url.newSongs.subTitle}}">
+    <image class="slot-icon" slot="icon" src="/images/icon/guangdie.png"></image>
+  </v-item>
+  <v-item title="主播电台" data="{{djSongs}}" subTitle="{{url.djSongs.subTitle}}">
+    <image class="slot-icon" slot="icon"  src="/images/icon/dj.png"></image>
+  </v-item>

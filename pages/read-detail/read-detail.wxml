@@ -1,0 +1,24 @@
+<!--pages/read-detail/read-detail.wxml-->
+<view class="container">
+    <image class="bg" src="{{item.imgSrc}}"></image>
+    <image class="play" bind:tap="handleMusic" 
+    src="{{isPlay?'/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
+    <view class="item">
+       <view class="detail">
+           <view>
+               <image class="icon" src="{{item.avatar}}"></image>
+            </view>
+            <text class="text">{{item.author}}</text>
+            <text class="publish">发表于</text>
+            <text class="text">{{item.dateTime}}</text>
+       </view>
+        <text class="title">{{item.title}}</text>
+        <view class="hr"></view>
+        <image class="collection" bind:tap="handleCollect"
+        src="{{isCollected?'/images/icon/collection.png':'/images/icon/collection-anti.png'}}"></image>
+        <image class="share" bind:tap="share" src="/images/icon/share-anti.png"></image>
+        <view class="Content">
+            <text class="content">{{item.content}}</text>
+        </view>
+    </view>
+</view>

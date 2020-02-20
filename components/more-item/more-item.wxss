@@ -1,0 +1,19 @@
+/* components/more-item/more-item.wxss */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item{
+    width: 220rpx;
+    display: flex;
+    flex-direction: column;
+}
+.bg{
+    width: 220rpx;
+    height: 220rpx;
+}
+.name{
+    width: 220rpx;
+    font-size: 25rpx;
+}

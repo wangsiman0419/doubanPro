@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="/images/avatar/4.png"></image>
+  <text>hello,小程序</text>
+  <button bind:tap="handleClick">开启我的小程序之旅</button>
+</view>

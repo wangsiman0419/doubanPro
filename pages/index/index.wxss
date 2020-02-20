@@ -1,0 +1,27 @@
+/**index.wxss**/
+page{
+    height: 100%;
+}
+.container{
+    height: 100%;
+    background: rgb(198, 232, 248);
+    padding-top: 200rpx;
+    display: flex;
+    flex-direction: column;
+    padding-left: 250rpx;
+}
+image{
+    width: 250rpx;
+    height: 250rpx;
+}
+text{
+    display: inline-block;
+    padding-top: 100rpx;
+    padding-left: 30rpx;
+}
+button{
+    background:rgb(198, 232, 248) ;
+    font-size: 30rpx;
+    margin-left: 0;
+    margin-top: 200rpx;
+}

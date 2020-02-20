@@ -1,0 +1,54 @@
+{
+    "pages": [
+      "pages/index/index",
+      "pages/movie/movie",
+      "pages/read/read",
+      "pages/read-detail/read-detail",
+      "pages/movie-more/movie-more",
+      "pages/movie-detail/movie-detail",
+      "pages/my/my",
+      "pages/music/music",
+      "pages/music-detail/music-detail",
+      "pages/music-more/music-more",
+      "pages/music-play/music-play"
+    ],
+    "requiredBackgroundModes": ["audio", "location"],
+    "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#405F80",
+      "navigationBarTitleText": "WeChat",
+      "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+      "color": "#666",
+      "selectedColor": "#3785F9",
+      "position": "bottom",
+      "borderStyle": "black",
+      "list": [
+        {
+          "pagePath": "pages/read/read",
+          "text": "阅读",
+          "iconPath": "/images/tab/yuedu.png",
+          "selectedIconPath": "/images/tab/yuedu_hl.png"
+        },
+        {
+          "pagePath": "pages/movie/movie",
+          "text": "电影",
+          "iconPath": "/images/tab/dianying.png",
+          "selectedIconPath": "/images/tab/dianying_hl.png"
+        },{
+          "pagePath": "pages/music/music",
+          "text": "音乐",
+          "iconPath": "/images/tab/music.png",
+          "selectedIconPath": "/images/tab/music_hl.png"
+        },
+        {
+          "pagePath": "pages/my/my",
+          "text": "我的",
+          "iconPath": "/images/tab/my.png",
+          "selectedIconPath": "/images/tab/my_hl.png"
+        } 
+      ]
+    },
+    "sitemapLocation": "sitemap.json"
+  }

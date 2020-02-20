@@ -1,0 +1,40 @@
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view>
+    <view class="head">
+        <image class="bg" src="{{movies.images.small}}" mode="aspectFill"></image>
+        <view class="blur"></view>
+    </view>
+    <view class="top">
+        <view class="title">神奇动物在哪里</view>
+        <text class="year">{{movies.countries}} - {{movies.year}}</text>
+        <view>
+            <text class="sum">{{movies.collect_count}}</text><text class="word">人喜欢</text><text class="sum">{{movies.reviews_count}}</text><text class="word">条评论</text>
+        </view>
+    </view>
+    <image class="pic" src="{{movies.images.small}}"  data-url="{{movies.images.small}}" bind:tap="handleImage"></image>
+    <view class="center">
+        <text class="subtitle">{{movies.original_title}}</text>
+        <view>
+            <text class="headline">评分</text>
+            <image wx:for="{{tools.formatStar(movies.rating.stars)}}" wx:key="item" class="star"
+            src="{{item==1?'/images/icon/star.png':'/images/icon/none-star.png'}}"></image>
+            <text class="mark">{{movies.rating.average}}</text>
+        </view>
+        <view><text class="headline">导演</text><text class="present">{{movies.directors[0].name}}</text></view>
+        <view><text class="headline">影人</text><text class="present">{{movies.casts[0].name}}/{{movies.casts[1].name}}/{{movies.casts[2].name}}</text></view>
+        <view><text class="headline">类型</text><text class="present">{{movies.genres[0]}}、{{movies.genres[1]}}、{{movies.genres[2]}}</text></view>
+    </view>
+    <view class="synopsis">
+       <view class="synopsis-title">剧情简介</view>
+       <text class="synopsis-content">{{movies.summary}}</text>
+    </view>
+    <view class="filmmaker">
+       <view class="synopsis-title">影人</view>
+       <scroll-view scroll-x="true" class="scroll">
+            <view wx:for="{{movies.casts}}" wx:key="item">
+                <image src="{{item.avatars.small}}" data-url="{{item.avatars.small}}" bind:tap="handleImage" class="item"></image>
+                <view class="name">{{item.name}}</view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

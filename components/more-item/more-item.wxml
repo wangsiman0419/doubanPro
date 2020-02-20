@@ -1,0 +1,7 @@
+<!--components/more-item/more-item.wxml-->
+<view class="container">
+    <view class="item">
+        <image class="bg" src="{{data.coverImgUrl}}"></image>
+        <text class="name">{{data.name}}</text>
+    </view>
+</view>

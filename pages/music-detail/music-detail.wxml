@@ -1,0 +1,12 @@
+<!--pages/music-detail/music-detail.wxml-->
+<image class="bg" src="{{pic}}"></image>
+<view class="list">播放列表</view>
+<view class="item" wx:for="{{songs}}" wx:key="{{item.id}}"
+bind:tap="handlePlay" data-poster="{{item.coverImgUrl}}"
+data-name="{{item.name}}" data-id="{{item.id}}">
+    <view class="cover-image">
+         <image class="icon" src="{{item.coverImgUrl}}"></image>
+         <text class="name">{{item.name}}</text>
+    </view>
+   <image class="play" src="{{isPlay && playId==item.id?'/images/icon/stop.png':'/images/icon/play.png'}}"></image>
+</view>

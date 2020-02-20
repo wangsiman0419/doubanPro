@@ -1,0 +1,21 @@
+/* components/movie-item/movie-item.wxss */
+.img{
+    width: 220rpx;
+    height: 280rpx;
+}
+.star{
+    width: 35rpx;
+    height: 35rpx;
+}
+.item{
+    width: 200rpx;
+    display: flex;
+    flex-direction: column;
+}
+.score{
+    color: #6E7B9A;
+    padding-left: 20rpx;
+}
+.title{
+    font-size: 30rpx;
+}

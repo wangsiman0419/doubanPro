@@ -1,0 +1,105 @@
+/* pages/movie-detail/movie-detail.wxss */
+.head{
+    position: relative;
+    width:100%;
+    height:400rpx;
+}
+.head .blur{
+   position: absolute;
+   width: 100%;
+   height: 400rpx;
+   background: rgba(51, 51, 51, .3);
+   left:0;
+   top:0;
+   backdrop-filter: blur(10px);
+}
+.bg{
+    height: 400rpx;
+}
+.top{
+    position: absolute;
+    top: 50rpx;
+    left: 50rpx;
+}
+.top .title{
+    color: white;
+    font-size: 40rpx;
+    margin-bottom: 50rpx;
+}
+.top .year{
+    color: white;
+    font-size: 30rpx;
+    margin-bottom: 70rpx;
+    display: inline-block;
+}
+.sum{
+    color: rgb(252, 38, 38);
+    font-size: 25rpx;
+}
+.word{
+    color: rgb(80, 79, 79);
+    font-size: 28rpx;
+    padding:0 30rpx;
+}
+.pic{
+    width: 150rpx;
+    height: 200rpx;
+    position: absolute;
+    top: 260rpx;
+    right: 40rpx;
+}
+.center,.synopsis,.filmmaker{
+    padding-left: 50rpx;
+    font-size: 25rpx;
+    border-bottom: 1px solid #999;
+    padding-bottom: 50rpx;
+}
+.subtitle{
+   padding-top: 30rpx;
+   padding-bottom: 50rpx;
+   display: inline-block;
+}
+.star{
+    width: 35rpx;
+    height: 35rpx;
+
+}
+.headline{
+    color: #999;
+    margin-right: 30rpx;
+    margin-bottom: 15rpx;
+    display: inline-block;
+}
+.mark{
+    color: rgb(34, 43, 92);
+    margin-left: 20rpx;
+}
+.present{
+    color: #666;
+}
+.synopsis-title{
+    color: #999;
+    font-size: 30rpx;
+    padding-top: 50rpx;
+    padding-bottom: 30rpx;
+}
+.synopsis-content{
+    font-size: 25rpx;
+    color: #666;
+}
+
+
+
+.scroll{
+    white-space: nowrap;
+}
+.scroll view{
+    display: inline-block;
+}
+.item{
+    width:200rpx;
+    height:270rpx;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40rpx;
+}

@@ -1,0 +1,7 @@
+<!--pages/music-more/music-more.wxml-->
+<view class="container">
+    <v-item  wx:for="{{playlists}}" wx:key="item" data="{{item}}">
+
+    </v-item>
+    
+</view>

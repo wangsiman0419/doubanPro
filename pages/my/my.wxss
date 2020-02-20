@@ -1,0 +1,13 @@
+/* pages/my/my.wxss */
+.logo{
+    width: 220rpx;
+    height: 220rpx;
+    border-radius: 50%;
+}
+.head{
+    text-align: center;
+}
+.map{
+    width: 100%;
+    height: 700rpx;
+}

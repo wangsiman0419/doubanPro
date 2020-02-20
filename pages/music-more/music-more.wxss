@@ -1,0 +1,6 @@
+/* pages/music-more/music-more.wxss */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

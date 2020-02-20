@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-movie":"/components/movie-item/movie-item"
+  },
+  "navigationBarBackgroundColor": "#405F80"
+}

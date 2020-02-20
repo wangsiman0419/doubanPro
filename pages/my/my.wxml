@@ -1,0 +1,12 @@
+<!--pages/my/my.wxml-->
+<view class="head">
+    <image src="{{imageUrl}}" class="logo"
+    bind:tap="handleImage" ></image>
+</view>
+<map class="map" longitude="{{longitude}}" 
+latitude="{{latitude}}" scale="{{scale}}"
+show-compass="{{showCompass}}"
+markers="{{markers}}"
+polyline="{{polyline}}"
+circles="{{circles}}"
+show-location="{{location}}"></map>

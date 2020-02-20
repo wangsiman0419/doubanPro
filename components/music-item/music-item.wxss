@@ -1,0 +1,32 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    border-top: 1px solid rgb(207, 207, 207);
+    padding-top: 30rpx; 
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item{
+    width:220rpx;
+    position: relative;
+    margin-top: 20rpx;
+    font-size: 28rpx;
+}
+.play-count{
+    position: absolute;
+    right:0;
+    top:5rpx;
+    color:#fff;
+}
+.play-count image{
+    width:24rpx;
+    height: 24rpx;
+}
+.cover>image{
+    width:220rpx;
+    height: 220rpx;
+}
